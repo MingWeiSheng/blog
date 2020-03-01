@@ -5,6 +5,14 @@
                 font-style:italic;
             }
         </style>
+        <script>
+            function open_win(){
+                window.open("1.html",'','width=200,height=100');
+            }
+            function change_win(){
+                window.location.href="1.html";
+            }
+        </script>
     </head>
     <body>
         <h1>The First Post:</h1>
@@ -66,6 +74,20 @@
             <h3>Sidebar</h3><br />
             &lt;aside&gt; often placed inside &lt;main&gt;<br />
             It shows great structure in the website, it can help a lot in my project1
+        </p>
+        <h1>The Third Post:</h1>
+        <p>
+            This week I tried to do some js to control the websites<br />
+            <a href="https://www.w3school.com.cn/htmldom/met_win_open.asp">The article showed how to open new window and control the window</a><br />
+        </p>
+        <p>
+            The difference of "open" and "change current page" is:<br />
+            &lt;window.open&gt;and&lt;window.location.href=""&gt;
+        </p>
+        <button type="button" onclick="open_win()">Open the new website</button>
+        <button type="button" onclick="change_win()">Change the current website</button>
+        <p>
+            This gives me some new ideas in my project1.
         </p>
     </body>
 </html>
