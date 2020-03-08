@@ -4,6 +4,17 @@
             h1{
                 font-style:italic;
             }
+            .languages {
+                 counter-reset: characters;
+            }
+            input:checked {  
+            counter-increment: characters;
+            }
+            .total:after {
+            content: counter(characters);
+            } 
+
+            
         </style>
         <script>
             function open_win(){
@@ -89,5 +100,34 @@
         <p>
             This gives me some new ideas in my project1.
         </p>
+        <h1>The Forth Post:</h1>
+        <a href="https://segmentfault.com/a/1190000005863953">The codes I learned</a>
+        <p>
+            I learned the case showed how many boexes selected<br />
+            It can be used in my project 1
+        </p>
+        <p>
+            The key code is<br />
+            input:checked {<br />
+                counter-increment: characters;<br />
+            }<br />
+            .total:after {<br />
+                content: counter(characters);<br />
+            }<br />
+
+        </p>
+        <div class="languages">  
+            <input id="c" type="checkbox"><label for="c">C</label>
+            <input id="C++" type="checkbox"><label for="C++">C++</label>
+            <input id="C#" type="checkbox"><label for="C#">C#</label>
+            <input id="Java" type="checkbox"><label for="Java">Java</label>
+            <input id="JavaScript" type="checkbox"><label for="JavaScript">JavaScript</label>
+            <input id="PHP" type="checkbox"><label for="PHP">PHP</label>
+            <input id="Python" type="checkbox"><label for="Python">Python</label>
+            <input id="Ruby" type="checkbox"><label for="Ruby">Ruby</label>
+          </div>  
+          <p class="total">  
+            Total selected:
+          </p>  
     </body>
 </html>
